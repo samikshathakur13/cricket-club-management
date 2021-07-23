@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body width:100%; height:100%;">
+  
+    <form id="form1" runat="server">
+    <div class="bg">
+    
+        <table width="100%" align="center" bgcolor="#99CCFF" style="background-image: url(backgroudimg.jpg); >
+        <tr align="center" ><td colspan="4"><h1>CRICKET CLUB ASSOCIATION </h1></td><td ><a href="login.aspx">
+            <asp:Label ID="lbllogin" runat="server" Text="LOGIN"></asp:Label></a></td></tr>
+            </table>
+        <table  align="center" width="75%">
+        <tr align="center"><td>
+        <a href="index.aspx">HOME</a></td>
+        <td><a href="reg.aspx">REGISTRATION</a></td>
+        
+        <td><a href="sechreport.aspx">SCHEDULE</a></td>
+        <td><a href="contact.aspx">CONTACT US</a></td>
+        </tr>
+        </table>
+      
+        <asp:ContentPlaceHolder id="cphbody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           <asp:ContentPlaceHolder id="cphlast" runat="server">
+         <table width="100%" align="center" >
+       
+        </table>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
